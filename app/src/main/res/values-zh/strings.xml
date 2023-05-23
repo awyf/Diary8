@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">羊羊日记</string>
+    <string name="menu_write">增加</string>
+    <string name="menu_cancel">取消</string>
+    <string name="error">出错!</string>
+    <string name="developing">功能还未开发</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="alert">确定创建新日记?</string>
+    <string name="add_title_hint">日记标题</string>
+    <string name="add_title_description">日记内容</string>
+    <string name="btn_ok">提交</string>
+    <string name="add_success">更新成功</string>
+    <string name="add_failed">更新失败</string>
+    <string name="dialog_delete">是否删除</string>
+</resources>

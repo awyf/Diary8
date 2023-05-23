@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Diary</string>
+    <string name="menu_write">Add</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="error">Error!</string>
+    <string name="developing">Features no open</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="alert">确定创建新日记?</string>
+    <string name="add_title_hint">Diary Title</string>
+    <string name="add_title_description">Diary Description</string>
+    <string name="btn_ok">Commit</string>
+    <string name="add_success">Update successful</string>
+    <string name="add_failed">Update failed</string>
+    <string name="dialog_delete">is it delete</string>
+</resources>
