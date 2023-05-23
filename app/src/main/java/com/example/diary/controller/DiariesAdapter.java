@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.diary.model.Diary;
 
 import java.util.List;
-
+//更新
 public class DiariesAdapter extends RecyclerView.Adapter<DiaryHolder> {
     private List<Diary> mDiaries;
     private OnLongClickListener<Diary> mOnLongClickListener;

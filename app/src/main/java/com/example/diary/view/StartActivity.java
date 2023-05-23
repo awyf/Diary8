@@ -13,7 +13,7 @@ import android.view.WindowManager;
 
 import com.example.diary.R;
 import com.example.diary.utils.GlideUtils;
-
+//开始页面
 public class StartActivity extends AppCompatActivity {
 
     private final StartHandler mHandler = new StartHandler();
