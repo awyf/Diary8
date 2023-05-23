@@ -15,7 +15,7 @@ import com.example.diary.model.DiaryHelper;
 import com.example.diary.utils.ActivityUtils;
 import com.example.diary.view.AddDiaryFragment;
 import com.example.diary.view.DiariesFragment;
-//添加日记的功能界面
+//添加日记的功能界面.
 public class AddDiaryController {
     private Fragment mView;
     private static final String TAG = "AddDiaryController";
