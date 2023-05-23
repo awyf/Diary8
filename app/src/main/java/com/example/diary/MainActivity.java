@@ -24,7 +24,7 @@ import com.example.diary.utils.ActivityUtils;
 import com.example.diary.view.AddDiaryFragment;
 import com.example.diary.view.DiariesFragment;
 import com.example.diary.view.MeFragment;
-//000
+
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
 
