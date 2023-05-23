@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.diary.R;
 import com.example.diary.controller.AddDiaryController;
+//one
 
 public class AddDiaryFragment extends Fragment implements View.OnClickListener {
     private AddDiaryController mController;
@@ -69,7 +70,7 @@ public class AddDiaryFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View view) {          //点击事件
         switch (view.getId()) {
             case R.id.add_diary_confirm:
                 mController.addDiaryToRepository(edit_title.getText().toString().trim(), edit_desc.getText().toString().trim());
