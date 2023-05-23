@@ -11,15 +11,19 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
             android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
             android:theme="@style/Widget.AppCompat.Toolbar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
