@@ -35,7 +35,7 @@ public class RegistActivity extends Activity {
                 }
                 else
                 {
-                    showDialog();//tanchuang
+                    showDialog();
                 }
                 Util.regist(RegistActivity.this, name.getText().toString(),pwd.getText().toString());
 
