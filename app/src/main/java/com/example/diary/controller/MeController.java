@@ -137,7 +137,7 @@ public class MeController {
         intent.putExtra("outputY", 150);
         intent.putExtra("return-data", false);
         mView.startActivityForResult(intent, CROP_SMALL_PICTURE);
-    }
+    }//0022
 
     public static void setToolbarVisibility(Activity activity) {
         View toolbar = activity.findViewById(R.id.toolbar);
