@@ -132,7 +132,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                     }
                 });
                 break;
-            case R.id.tv_setting:
+            case R.id.tv_setting://第一个弹窗
                 Util.showAlert(getActivity(), "前往设置页？", new OnClick() {
                     @Override
                     public void onDo() {
