@@ -1,5 +1,5 @@
 package com.example.diary.controller;
-
+//管理员界面
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

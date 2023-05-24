@@ -39,7 +39,7 @@
             android:hint="输入您的用户名"
             android:inputType="text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="48dp" />
 
     </LinearLayout>
 
@@ -65,7 +65,7 @@
             android:hint="输入您的密码"
             android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="48dp" />
 
     </LinearLayout>
 

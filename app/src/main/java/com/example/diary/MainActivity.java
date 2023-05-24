@@ -24,10 +24,10 @@ import com.example.diary.utils.ActivityUtils;
 import com.example.diary.view.AddDiaryFragment;
 import com.example.diary.view.DiariesFragment;
 import com.example.diary.view.MeFragment;
-
+//主界面1
+//555
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

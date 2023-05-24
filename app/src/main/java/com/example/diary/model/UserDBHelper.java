@@ -13,7 +13,7 @@ import com.example.diary.utils.Util;
 
 import java.util.ArrayList;
 import java.util.List;
-
+///
 public class UserDBHelper extends SQLiteOpenHelper {
     private static final String TAG = "UserDBHelper";
     //声明数据库帮助器的实例

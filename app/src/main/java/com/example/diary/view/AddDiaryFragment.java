@@ -14,6 +14,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.diary.R;
 import com.example.diary.controller.AddDiaryController;
+import com.example.diary.utils.CollectionUtils;
+import com.example.diary.utils.OnClick;
+import com.example.diary.utils.Util;
+
+//one
 
 public class AddDiaryFragment extends Fragment implements View.OnClickListener {
     private AddDiaryController mController;
@@ -69,13 +74,18 @@ public class AddDiaryFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View view) {          //点击事件
         switch (view.getId()) {
-            case R.id.add_diary_confirm:
-                mController.addDiaryToRepository(edit_title.getText().toString().trim(), edit_desc.getText().toString().trim());
-                mController.setNavigationVisibility();
-                mController.closeWriteDiary(getActivity().getSupportFragmentManager(), this);
-                break;
+               case R.id.add_diary_confirm:
+              Util.showAlert(getActivity(), "添加成功", new OnClick() {
+                    @Override
+                    public void onDo() {
+                        mController.addDiaryToRepository(edit_title.getText().toString().trim(), edit_desc.getText().toString().trim());
+                        mController.setNavigationVisibility();
+                        mController.closeWriteDiary(getActivity().getSupportFragmentManager(), AddDiaryFragment.this);
+                    }
+
+                });
             case R.id.edit_layout:
                 mController.changeFocus(edit_desc);
                 break;
