@@ -53,6 +53,9 @@ public class DiariesController {
             }
         });
     }
+//这段代码是一个Android应用程序中的Java代码，用于显示一个对话框，询问用户是否要删除一个日记。
+// 如果用户点击“确定”按钮，它将从数据库中删除该日记，并显示一个新的对话框，
+// 告诉用户删除成功。如果用户点击“取消”按钮，则不会执行任何操作。
 
     private void showDeleteDialog(Diary data) {
         new AlertDialog.Builder(mView.getContext()).setMessage("是否删除" + data.getTitle())

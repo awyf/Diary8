@@ -23,7 +23,7 @@ public class DiariesFragment extends Fragment {
         super.onCreate(savedInstanceState);
         mController = new DiariesController(this);
     }
-
+//创建了一个DiariesController对象
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -31,8 +31,9 @@ public class DiariesFragment extends Fragment {
         mController.setDiariesList(root.findViewById(R.id.diaries_list));
         return root;
     }
-
+//在onCreateView()方法中将日记列表传递给它
     @Override
+    //在onResume()方法中，它调用DiariesController的loadDiaries()方法来加载日记列表
     public void onResume() {
         super.onResume();
         mController.loadDiaries();

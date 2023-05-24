@@ -12,7 +12,9 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-//
+//用于创建 SQLite 数据库的帮助类 DiaryHelper，
+// 它包含一个名为 "diary.db" 的数据库和一个名为 "diary_info" 的表。
+// 该类提供了一个静态方法 getInstance()，用于获取 DiaryHelper 的实例。
 public class DiaryHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "diary.db";
     private static final String TABLE_NAME = "diary_info";
