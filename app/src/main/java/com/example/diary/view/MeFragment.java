@@ -178,7 +178,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    @Override
+    @Override   //第二个弹窗
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PermissionUtils.REQUEST_CODE) {
