@@ -13,7 +13,7 @@ import com.example.diary.YyApplication;
 import com.example.diary.R;
 import com.example.diary.model.DiaryHelper;
 import com.example.diary.utils.ActivityUtils;
-import com.oyoung.diary.utils.Util;
+import com.example.diary.utils.Util;
 import com.oyoung.diary.view.AddDiaryFragment;
 import com.oyoung.diary.view.DiariesFragment;
 
