@@ -25,11 +25,7 @@ public class FileUtils {
         }
     }
 
-    /**
-     * 2.
-     * 通过上下文的方式读取保存在.txt文件中的密码
-     * @return 是否成功读取
-     */
+
     public static String readInfoByContext(Context context) {
         try {
             FileInputStream fis = context.openFileInput("info.txt");
