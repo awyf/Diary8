@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import com.example.diary.diaryApplication;
-import com.example.diary.R;
+import com.example.diary.R;     
 import com.example.diary.model.DiaryHelper;
 import com.example.diary.utils.ActivityUtils;
 import com.example.diary.view.AddDiaryFragment;
