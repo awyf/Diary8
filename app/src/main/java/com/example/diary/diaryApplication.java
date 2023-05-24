@@ -3,7 +3,7 @@ package com.example.diary;
 import android.app.Application;
 
 import com.example.diary.utils.GlideUtils;
-
+//123
 public class diaryApplication extends Application {
     private static diaryApplication INSTANCE;
 
