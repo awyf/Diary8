@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import com.example.diary.diaryApplication;
-import com.example.diary.R;
+import com.example.diary.R;     
 import com.example.diary.model.DiaryHelper;
 import com.example.diary.utils.ActivityUtils;
 import com.example.diary.view.AddDiaryFragment;
@@ -44,14 +44,13 @@ public class AddDiaryController {
         ActivityUtils.removeFragmentTOActivity(fragmentManager, fragment);
         ActivityUtils.addFragmentToActivity(fragmentManager, new DiariesFragment(), R.id.content);
     }
-
+    
     public void setNavigationVisibility() {
         View navigation_bottom = mView.getActivity().findViewById(R.id.navigation_bottom);
         if (navigation_bottom.getVisibility() != View.VISIBLE) {
             navigation_bottom.setVisibility(View.VISIBLE);
         }
     }
-
     public void changeFocus(View view) {
         view.setFocusable(true);
         view.setFocusableInTouchMode(true);
