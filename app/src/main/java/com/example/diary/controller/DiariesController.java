@@ -55,16 +55,25 @@ public class DiariesController {
     }
 
     private void showDeleteDialog(Diary data) {
-        new AlertDialog.Builder(mView.getContext()).setMessage(diaryApplication.get().getString(R.string.dialog_delete) + data.getTitle())
-                .setPositiveButton(diaryApplication.get().getString(R.string.ok),
+        new AlertDialog.Builder(mView.getContext()).setMessage("是否删除" + data.getTitle())
+                .setPositiveButton("确定",
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 diaryHelper.delete(data.getId());
                                 loadDiaries();
+                                new AlertDialog.Builder(mView.getContext()).setMessage("删除成功")
+                                        .setPositiveButton("确定",
+                                                new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                                                    }
+                                                })
+                                        .show();
                             }
                         })
-                .setNegativeButton(diaryApplication.get().getString(R.string.cancel), null).show();
+                .setNegativeButton("取消", null).show();
     }
 
     private void showDetailDiary(final Diary diary) {
