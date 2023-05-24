@@ -14,6 +14,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.diary.R;
 import com.example.diary.controller.AddDiaryController;
+import com.example.diary.utils.CollectionUtils;
+import com.example.diary.utils.OnClick;
+import com.example.diary.utils.Util;
+
 //one
 
 public class AddDiaryFragment extends Fragment implements View.OnClickListener {
