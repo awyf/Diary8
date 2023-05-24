@@ -135,7 +135,7 @@ public class MeController {
         // outputX outputY 是裁剪图片宽高
         intent.putExtra("outputX", 150);
         intent.putExtra("outputY", 150);
-        intent.putExtra("return-data", true);
+        intent.putExtra("return-data", false);
         mView.startActivityForResult(intent, CROP_SMALL_PICTURE);
     }
 
