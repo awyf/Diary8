@@ -25,6 +25,7 @@ import com.example.diary.view.DiariesFragment;
 import java.util.ArrayList;
 import java.util.List;
 //日记列表的逻辑控制代码
+//
 public class DiariesController {
     private Fragment mView;
     private DiariesAdapter mListAdapter;
