@@ -45,6 +45,7 @@ public class AddDiaryController {
         ActivityUtils.addFragmentToActivity(fragmentManager, new DiariesFragment(), R.id.content);
     }
 
+    
     public void setNavigationVisibility() {
         View navigation_bottom = mView.getActivity().findViewById(R.id.navigation_bottom);
         if (navigation_bottom.getVisibility() != View.VISIBLE) {
@@ -52,6 +53,7 @@ public class AddDiaryController {
         }
     }
 
+    
     public void changeFocus(View view) {
         view.setFocusable(true);
         view.setFocusableInTouchMode(true);
