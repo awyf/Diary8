@@ -117,7 +117,7 @@ public class MeController {
      * 裁剪图片方法实现
      *
      * @param uri
-     */
+     */startPhotoZoom 图片剪裁功能
     public void startPhotoZoom(Uri uri) {
         if (uri == null) {
             Log.i("tag", "The uri is not exist.");
