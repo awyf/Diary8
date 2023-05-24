@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
-
+//底部状态栏的点击
     private final BottomNavigationView.OnNavigationItemSelectedListener itemSelectedListener = item -> {
         switch (item.getItemId()) {
             case R.id.menu_diary:
