@@ -35,7 +35,7 @@ import java.io.File;
 public class MeController {
     private static final int CHOOSE_PICTURE = 0;
     private static final int TAKE_PICTURE = 1;
-    private static final int CROP_SMALL_PICTURE = 2;
+    private static final int CROP_SMALL_PICTURE = 2;     
 
     private Fragment mView;
 
