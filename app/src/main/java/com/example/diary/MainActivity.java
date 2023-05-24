@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         initFragment();
         initNavigationBottom();
     }
-
+//底部导航
     @SuppressLint("ResourceAsColor")
     private void initNavigationBottom() {
         bottomNavigationView = findViewById(R.id.navigation_bottom);
