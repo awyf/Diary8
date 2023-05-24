@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//
 public class DiaryHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "diary.db";
     private static final String TABLE_NAME = "diary_info";
