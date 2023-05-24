@@ -31,7 +31,7 @@ import com.example.diary.view.MeFragment;
 import com.example.diary.view.SelectPicPopupWindow;
 
 import java.io.File;
-
+//
 public class MeController {
     private static final int CHOOSE_PICTURE = 0;
     private static final int TAKE_PICTURE = 1;

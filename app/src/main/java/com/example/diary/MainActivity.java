@@ -27,7 +27,6 @@ import com.example.diary.view.MeFragment;
 //主界面1
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
-//999
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         initFragment();
         initNavigationBottom();
     }
-
+//底部导航
     @SuppressLint("ResourceAsColor")
     private void initNavigationBottom() {
         bottomNavigationView = findViewById(R.id.navigation_bottom);
@@ -67,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
-
+//底部状态栏的点击
     private final BottomNavigationView.OnNavigationItemSelectedListener itemSelectedListener = item -> {
         switch (item.getItemId()) {
             case R.id.menu_diary:

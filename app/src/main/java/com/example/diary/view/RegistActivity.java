@@ -1,6 +1,8 @@
 package com.example.diary.view;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -28,13 +30,31 @@ public class RegistActivity extends Activity {
             public void onClick(View view) {
                 if(TextUtils.isEmpty(name.getText().toString())||
                         TextUtils.isEmpty(pwd.getText().toString())) {
-                    Toast.makeText(RegistActivity.this, "用户，密码不能为空", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(RegistActivity.this, "用户，密码不能为空", Toast.LENGTH_SHORT).show();
                     return;
+                }
+                else
+                {
+                    showDialog();//
                 }
                 Util.regist(RegistActivity.this, name.getText().toString(),pwd.getText().toString());
 
             }
         });
+    }
+
+    public void showDialog(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setTitle("");
+        builder.setMessage("注册成功");
+        builder.setPositiveButton("我知道了", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        AlertDialog dialog=builder.create();
+        dialog.show();
     }
     @Override
     protected void onStop() {

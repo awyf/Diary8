@@ -108,13 +108,7 @@ public class GlideUtils {
     }
 
 
-    /**
-     * 显示网络Url图片 附带加载网络监听和设置监听资源
-     * @param url 地址
-     * @param imageView 图片控件
-     * @param needNetListener 是否需要网络监听
-     * @param needResourceListener 是否需要设置监听资源
-     */
+
     public static void loadImageListener(String url, ImageView imageView, boolean needNetListener, boolean needResourceListener) {
         if (needResourceListener) {
             Glide.with(context).load(url).addListener(needNetListener ? requestListener : null).into(getImageViewTarget(imageView));

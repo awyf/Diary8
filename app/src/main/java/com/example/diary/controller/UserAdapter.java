@@ -17,7 +17,8 @@ import com.example.diary.R;
 import com.example.diary.model.UserInfo;
 import com.example.diary.utils.OnClick;
 import com.example.diary.utils.Util;
-
+import com.example.diary.utils.OnClick;
+import com.example.diary.utils.Util;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
@@ -48,15 +49,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_user_item,parent,false);
         final ViewHolder viewHolder = new ViewHolder(view);
-//        viewHolder.UserInfoView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                int position = viewHolder.getAdapterPosition();
-//                UserInfo UserInfo = mUserInfoList.get(position);
-//                Toast.makeText(v.getContext(), "你点击了这个布局", Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
+       viewHolder.UserInfoView.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+              int position = viewHolder.getAdapterPosition();
+               UserInfo UserInfo = mUserInfoList.get(position);
+               Toast.makeText(v.getContext(), "你点击了这个布局", Toast.LENGTH_SHORT).show();
+
+           }
+        });
         viewHolder.delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
