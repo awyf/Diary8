@@ -1,5 +1,6 @@
 package com.example.diary.controller;
 
+
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
@@ -9,31 +10,32 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import com.example.diary.diaryApplication;
-import com.example.diary.R;     
-import com.example.diary.model.DiaryHelper;
-import com.example.diary.utils.ActivityUtils;
-import com.example.diary.view.AddDiaryFragment;
-import com.example.diary.view.DiariesFragment;
-//添加日记的功能界面
+import com.oyoung.diary.YyApplication;
+import com.oyoung.diary.R;
+import com.oyoung.diary.model.DiaryHelper;
+import com.oyoung.diary.utils.ActivityUtils;
+import com.oyoung.diary.utils.Util;
+import com.oyoung.diary.view.AddDiaryFragment;
+import com.oyoung.diary.view.DiariesFragment;
+
 public class AddDiaryController {
     private Fragment mView;
     private static final String TAG = "AddDiaryController";
     private DiaryHelper diaryHelper;
 
     public AddDiaryController(@NonNull AddDiaryFragment addDiaryFragment) {
-        diaryHelper = DiaryHelper.getInstance(diaryApplication.get());
+        diaryHelper = DiaryHelper.getInstance(YyApplication.get());
         mView = addDiaryFragment;
         mView.setHasOptionsMenu(true);
     }
 
-    public void addDiaryToRepository(String title, String desc) {
+    public void addDiaryToRepository(String title, String desc,String time, String emo) {
         if (title.isEmpty() || desc.isEmpty()) {
-            showMessage(diaryApplication.get().getString(R.string.add_failed));
+            showMessage(YyApplication.get().getString(R.string.add_failed));
             return;
         }
-        diaryHelper.insert(title, desc);
-        showMessage(diaryApplication.get().getString(R.string.add_success));
+        diaryHelper.insert(title, desc,time,emo);
+        showMessage(YyApplication.get().getString(R.string.add_success));
     }
 
     private void showMessage(String message) {
@@ -44,13 +46,14 @@ public class AddDiaryController {
         ActivityUtils.removeFragmentTOActivity(fragmentManager, fragment);
         ActivityUtils.addFragmentToActivity(fragmentManager, new DiariesFragment(), R.id.content);
     }
-    
+
     public void setNavigationVisibility() {
         View navigation_bottom = mView.getActivity().findViewById(R.id.navigation_bottom);
         if (navigation_bottom.getVisibility() != View.VISIBLE) {
             navigation_bottom.setVisibility(View.VISIBLE);
         }
     }
+
     public void changeFocus(View view) {
         view.setFocusable(true);
         view.setFocusableInTouchMode(true);
@@ -59,8 +62,10 @@ public class AddDiaryController {
             return;
         }
         if (view instanceof EditText) {
-            InputMethodManager imm = (InputMethodManager) diaryApplication.get().getSystemService(Context.INPUT_METHOD_SERVICE);
+            InputMethodManager imm = (InputMethodManager) YyApplication.get().getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.showSoftInput(view, 0);
         }
     }
+
+
 }
