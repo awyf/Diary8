@@ -62,7 +62,7 @@ public class DiariesController {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 diaryHelper.delete(data.getId());
                                 loadDiaries();
-                                new AlertDialog.Builder(mView.getContext()).setMessage("删除成功")
+                                new AlertDialog.Builder(mView.getContext()).setMessage("删除成功！")
                                         .setPositiveButton("确定",
                                                 new DialogInterface.OnClickListener() {
                                                     @Override
@@ -86,15 +86,25 @@ public class DiariesController {
         editText.setText(data.getDescription());
         new AlertDialog.Builder(mView.getContext()).setTitle(data.getTitle())
                 .setView(editText)
-                .setPositiveButton(diaryApplication.get().getString(R.string.ok),
+                .setPositiveButton("确定",
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 diaryHelper.modify(data.getId(), "", editText.getText().toString());
                                 loadDiaries();
+
+                                new AlertDialog.Builder(mView.getContext()).setMessage("修改成功！")
+                                        .setPositiveButton("确定",
+                                                new DialogInterface.OnClickListener() {
+                                                    @Override
+                                                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                                                    }
+                                                })
+                                        .show();
                             }
                         })
-                .setNegativeButton(diaryApplication.get().getString(R.string.cancel), null).show();
+                .setNegativeButton("确定", null).show();
     }
 
     public void setDiariesList(RecyclerView recycleView) {
