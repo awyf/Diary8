@@ -10,12 +10,7 @@ import java.io.IOException;
 
 public class FileUtils {
 
-    /**
-     * 1.
-     * @param context 上下文
-     * @param password 密码
-     * @return 是否成功保存
-     */
+
     public static boolean saveInfoByContext(Context context, String password) {
         try {
             FileOutputStream fileOutputStream = context.openFileOutput("info.txt", Context.MODE_PRIVATE);
