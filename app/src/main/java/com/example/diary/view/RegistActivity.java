@@ -30,7 +30,7 @@ public class RegistActivity extends Activity {
             public void onClick(View view) {
                 if(TextUtils.isEmpty(name.getText().toString())||
                         TextUtils.isEmpty(pwd.getText().toString())) {
-                    showDialog1();//88
+                    showDialog1();//883
                     //Toast.makeText(RegistActivity.this, "用户，密码不能为空", Toast.LENGTH_SHORT).show();
                     return;
                 }
