@@ -99,7 +99,7 @@ public class MeController {
     }
 
     /**
-     * 弹出头像选择框
+     * 弹出头像选择框，第三个弹窗
      */
     public void showSelectWindow() {
         menuWindow = new SelectPicPopupWindow(mView.getActivity(), itemsOnClick);
