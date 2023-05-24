@@ -26,4 +26,4 @@ public final class GsonUtils {
     public static <T> T fromJson(final String json, final Type type) {
         return GSON.fromJson(json, type);
     }
-}
+}//sdaf
