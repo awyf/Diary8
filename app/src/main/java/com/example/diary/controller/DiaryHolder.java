@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 
 import com.example.diary.R;
 import com.example.diary.model.Diary;
-
+//
 public class DiaryHolder extends RecycleViewHolder<Diary>{
     private View.OnLongClickListener mOnLongClickListener;
     private View.OnClickListener mOnClickListener;
