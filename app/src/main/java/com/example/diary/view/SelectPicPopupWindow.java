@@ -13,7 +13,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.diary.R;
+import com.example.diary.R;     
 
 
 

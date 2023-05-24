@@ -11,12 +11,7 @@ import java.io.IOException;
 
 
 public class BitmapUtils {
-    /**
-     * 将图片保存到sdcard
-     * @param colorImage
-     * @param ImageName
-     * @param path
-     */
+
     public static void storeImageToSDCARD(Bitmap colorImage, String ImageName,
                                           String path) {
         File file = new File(path);
