@@ -79,7 +79,7 @@ public class DiariesController {
     private void showDetailDiary(final Diary diary) {
 
     }
-
+//修改弹窗
 
     private void showInputDialog(final Diary data) {
         final EditText editText = new EditText(mView.getContext());
