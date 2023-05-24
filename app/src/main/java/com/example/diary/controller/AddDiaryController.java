@@ -14,7 +14,7 @@ import com.example.diary.R;
 import com.example.diary.model.DiaryHelper;
 import com.example.diary.utils.ActivityUtils;
 import com.example.diary.utils.Util;
-import com.oyoung.diary.view.AddDiaryFragment;
+import com.example.diary.view.AddDiaryFragment;
 import com.oyoung.diary.view.DiariesFragment;
 
 public class AddDiaryController {
