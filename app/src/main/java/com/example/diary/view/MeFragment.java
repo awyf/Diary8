@@ -79,7 +79,8 @@ public class MeFragment extends Fragment implements View.OnClickListener {
 
     @SuppressLint("ClickableViewAccessibility")
 
-    private void setTouch() {
+    private void setTouch() {//setTouch() 是一个在编写基于触摸屏的应用程序使用的函数。
+        // 它被用来设置一个触摸屏的触摸事件的回调函数，当用户在触摸屏上进行触摸操作时，该回调函数会被调用。
         tv_password.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
