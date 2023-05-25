@@ -23,7 +23,7 @@ public final class SharedPreferencesUtils {
     }
 
     public void put(final String key, final String value) {
-        mSharedPreferences.edit().putString(key, value).apply();
+        mSharedPreferences.edit().putString(key, value).apply();      
     }
 
     public String get(final String key) {

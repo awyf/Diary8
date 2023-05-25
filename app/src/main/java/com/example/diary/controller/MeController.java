@@ -35,7 +35,7 @@ import java.io.File;
 public class MeController {
     private static final int CHOOSE_PICTURE = 0;
     private static final int TAKE_PICTURE = 1;
-    private static final int CROP_SMALL_PICTURE = 2;
+    private static final int CROP_SMALL_PICTURE = 2;     
 
     private Fragment mView;
 
@@ -99,7 +99,7 @@ public class MeController {
     }
 
     /**
-     * 弹出头像选择框
+     * 弹出头像选择框，第三个弹窗
      */
     public void showSelectWindow() {
         menuWindow = new SelectPicPopupWindow(mView.getActivity(), itemsOnClick);
@@ -117,7 +117,7 @@ public class MeController {
      * 裁剪图片方法实现
      *
      * @param uri
-     */
+     *//startPhotoZoom 图片剪裁功能
     public void startPhotoZoom(Uri uri) {
         if (uri == null) {
             Log.i("tag", "The uri is not exist.");
@@ -135,9 +135,9 @@ public class MeController {
         // outputX outputY 是裁剪图片宽高
         intent.putExtra("outputX", 150);
         intent.putExtra("outputY", 150);
-        intent.putExtra("return-data", true);
+        intent.putExtra("return-data", false);
         mView.startActivityForResult(intent, CROP_SMALL_PICTURE);
-    }
+    }//0022
 
     public static void setToolbarVisibility(Activity activity) {
         View toolbar = activity.findViewById(R.id.toolbar);

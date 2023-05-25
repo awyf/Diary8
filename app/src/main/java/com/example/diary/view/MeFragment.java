@@ -132,7 +132,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                     }
                 });
                 break;
-            case R.id.tv_setting:
+            case R.id.tv_setting://第一个弹窗
                 Util.showAlert(getActivity(), "前往设置页？", new OnClick() {
                     @Override
                     public void onDo() {
@@ -158,7 +158,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    @Override
+    @Override    
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) { // 如果返回码是可以用的
@@ -178,7 +178,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    @Override
+    @Override   //第二个弹窗
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == PermissionUtils.REQUEST_CODE) {
