@@ -22,7 +22,9 @@ public class DiariesAdapter extends RecyclerView.Adapter<DiaryHolder> {
         mDiaries = diaries;
         notifyDataSetChanged();
     }
-//这是一个RecyclerView的适配器类，用于将数据源中的Diary对象绑定到RecyclerView的ItemView上。其中，mDiaries是数据源，mOnLongClickListener和mOnClickListener是长按和点击事件的监听器。update方法用于更新数据源并刷新RecyclerView。
+//这是一个RecyclerView的适配器类，用于将数据源中的Diary对象绑定到RecyclerView的ItemView上。
+// 其中，mDiaries是数据源，mOnLongClickListener和mOnClickListener是长按和点击事件的监听器。
+// update方法用于更新数据源并刷新RecyclerView。
     public void setOnLongClickListener(OnLongClickListener<Diary> onLongClickListener) {
         this.mOnLongClickListener = onLongClickListener;
     }
