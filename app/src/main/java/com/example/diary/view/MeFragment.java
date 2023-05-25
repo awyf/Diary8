@@ -116,7 +116,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
             case R.id.tv_helpPhone:{
                 Util.showAlert(getActivity(), "拔打电话 400 600 000 ？", new OnClick() {
                     @Override
-                    public void onDo() {
+                    public void onDo() {//页面跳转
                         Intent intent = new Intent(Intent.ACTION_CALL);
                         Uri data = Uri.parse("tel:" + "400 600 000");
                         intent.setData(data);
