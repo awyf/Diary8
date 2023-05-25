@@ -62,7 +62,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         return root;
     }
 
-    private void initView(View root) {
+    private void initView(View root) {//自定义的布局文件
         imageView = root.findViewById(R.id.image_me);
         tv_update = root.findViewById(R.id.tv_update);
         tv_update.setOnClickListener(this);
