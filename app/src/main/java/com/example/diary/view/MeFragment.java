@@ -111,7 +111,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
 
     @SuppressLint("NonConstantResourceId")
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) {//点击事件
         switch (v.getId()) {
             case R.id.tv_helpPhone:{
                 Util.showAlert(getActivity(), "拔打电话 400 600 000 ？", new OnClick() {
