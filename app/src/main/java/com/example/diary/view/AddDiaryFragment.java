@@ -21,7 +21,7 @@ import com.example.diary.utils.Util;
 //one
 
 public class AddDiaryFragment extends Fragment implements View.OnClickListener {
-    private AddDiaryController mController;
+    private AddDiaryController mController; 
     private View edit_layout;
     private Button btn_confirm;
     private EditText edit_title;
