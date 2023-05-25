@@ -29,7 +29,7 @@ public class DiaryHelper extends SQLiteOpenHelper {
     }
 
     public static DiaryHelper getInstance(Context context) {
-        if (diaryHelper == null) {
+        if (diaryHelper == null) { 
             diaryHelper = new DiaryHelper(context);
         }
         return diaryHelper;
