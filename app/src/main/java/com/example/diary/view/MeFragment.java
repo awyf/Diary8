@@ -51,7 +51,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);//调用父类的onCreate构造函数，savedInstanceState是保存当前Activity的状态信息
-        meController = new MeController(this);
+        meController = new MeController(this);//super是调用父类的属性或者方法，反之this就是调用本类中的属性和方法
     }
 
     @Nullable
