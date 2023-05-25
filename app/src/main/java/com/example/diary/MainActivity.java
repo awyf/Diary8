@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-    }//这段代码的作用是初始化一个顶部工具栏，并将状态栏设置为透明。
+    }///这段代码的作用是初始化一个顶部工具栏，并将状态栏设置为透明。
     // 它找到了一个id为toolbar的控件，并将其设置为ActionBar，
     // 在顶部显示一个工具栏。
     // 这个工具栏可以包含一些常用的操作按钮，例如返回按钮、菜单按钮等。
