@@ -126,7 +126,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                 break;
             }
             case R.id.tv_update:
-                GlideUtils.getBitmap(getActivity(), imaUrl, new GlideUtils.GlideLoadBitmapCallback() {
+                GlideUtils.getBitmap(getActivity(), imaUrl, new GlideUtils.GlideLoadBitmapCallback() {//获取图片
                     @Override
                     public void getBitmapCallback(Bitmap bitmap) {
                         imageView.setImageBitmap(bitmap);
