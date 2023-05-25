@@ -57,7 +57,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_me, container, false);
+        View root = inflater.inflate(R.layout.fragment_me, container, false);//调用fragment_me.xml文件
         initView(root);
         return root;
     }
