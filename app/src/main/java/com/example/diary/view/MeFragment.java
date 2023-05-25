@@ -50,7 +50,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     View tv_helpPhone;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);//调用父类的onCreate构造函数，savedInstanceState是保存当前Activity的状态信息
         meController = new MeController(this);
     }
 
